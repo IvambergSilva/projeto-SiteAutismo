@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+
+:root {
+    --corSecundaria: #25476A;
+    --corPrinBranda: #41B9FF80;
+    --fontSora: 'Sora', sans-serif;
+}
+
+/* RODAPÉ */
+
+/* Logo */
+
+footer {
+    width: 100%;
+    background-color: #FFF;
+    border-top: 1px solid #000;
+    margin-top: 1px;
+}
+
+footer figure img {
+    width: 75px;
+    height: 75px;
+    margin-left: 10vw;
+}
+
+.linha {
+    height: 1px;
+    width: 80%;
+    margin: auto;
+    background: var(--corSecundaria);
+}
+
+.footerTop {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 228px;
+}
+
+.copyright img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.copyright p {
+    font: 22px var(--fontSora);
+    color: var(--corSecundaria);
+    margin: 10px;
+}
+
+.seloBR, .bNone  {
+    display: none;
+}
+
+.bBlock {
+    display: block;
+}
+
+/* CONTATOS */
+
+.footerContatos {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 10vw;
+}
+
+.gmail,
+.github,
+.linkedin,
+.instagram {
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    background-color: var(--corPrinBranda);
+
+    margin-right: 40px;
+
+    position: relative;
+}
+
+.instagram {
+    margin-right: 0;
+}
+
+.gmail img,
+.github img,
+.linkedin img,
+.instagram img {
+    width: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.gmail:hover,
+.github:hover,
+.linkedin:hover,
+.instagram:hover 
+ {
+    transform: scale(1.2);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 500px) {
+    
+    footer figure img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footerTop {
+        height: fit-content;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footerContatos {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footerContatos div {
+        margin: 0;
+    }
+    
+    .linha {
+        margin-top: 50px;
+    }
+
+    .copyright {
+        padding-top: 0;
+    }
+}

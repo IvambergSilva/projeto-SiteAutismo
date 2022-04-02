@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/reset.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+
+    <link rel="stylesheet" href="styles/mododark.css">
+    
+    <link rel="stylesheet" href="styles/menu.css">
+
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/a3f86d1427.js" crossorigin="anonymous"></script>
+
+    <title>Autismo em FOCO</title>
+</head>
+<body>
+    <header class="header">
+        <figure>
+            <a href="#"><img src="images/logo.png" alt="Logo criado para o site. Nele contém uma fita no de conscientização com fundo de quebra-cabeça, representando o apoio às pessoas com autismo"></a>
+        </figure>
+        
+        <div class="botoes">
+            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+            <label class="label" for="checkbox">
+                <i class="fas fa-sun"></i>  <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <button class="btnOpen" onclick="openNav()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+
+        <button class="btnClose"  onclick="closeNav()">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+        </button>
+
+        <div id="myMenu" class="menu">
+            <div class="menuLista">
+                <a href="#" onclick="close()">Início</a>
+                <a href="#simbolos" onclick="close()">Símbolos</a>
+                <a href="#saberMais" onclick="close()">Saber mais</a>
+                <a href="#fotos" onclick="close()">Fotos</a>
+                <a href="#footer" onclick="close()">Contatos</a>
+            </div>
+        </div>
+    </header>
+ 
+    <main>
+        <section class="firstBlock clasDark">
+            <div class="titulo">
+                <h1>Dia Mundial da <br> <strong>Conscientização do Autismo</strong></h1>
+                <h2>02 DE ABRIL</h2>
+            </div>
+
+            <div class="frase">
+                <p>Quando você ajuda, as peças se encaixam...</p>
+            </div>
+            
+            <figure class="maos">
+                <img src="images/maoEsquerda.png" class="maoEsquerda" alt="">
+                <img src="images/maoDireita.png" class="maoDireita" alt="">
+            </figure>
+        </section>
+
+        <span class="espaco" id="simbolos"></span>       
+
+        <section class="secondBlock" >
+            <h1>Símbolos do Autismo</h1>
+            <div class="simbolos">
+                
+                <div class="linhaSimbolos"></div>
+
+                <div class="simboloAzul">
+                    <h2 class="mostrarNoMedia">Cor Azul</h2>
+                    <div class="blocoAzul"></div>
+                    <h2 class="mostrarDesktop">Cor Azul</h2>
+                    <p>A cor azul oferece destaque a essa causa importante, e foi definida para retratar os meninos, tendo em vista que eles são 80% dos casos de autismo, além de representar calmaria em um mundo barulhento para as pessoas do espectro.</p>
+                </div>
+
+                <div class="linhaSimbolos"></div>
+
+                <div class="simboloQuebra">
+                    <h2 class="mostrarNoMedia">Quebra-Cabeça</h2>
+                    <img src="images/puzzle.png" alt="Simbolo de quebra-cabeça om 4 peças unidas">
+                    <h2 class="mostrarDesktop">Quebra-Cabeça</h2>
+                    <p>Representa a complexidade e dificuldade de compreensão que as pessoas com transtorno de Espectro Autista (TEA) enfretam diariamente. Este símbolo foi usado pela priemira vez na década de 60 e popularizada pela maior organização de defesa do autismo nos EUA, a Autism Speak.</p>
+                </div>
+
+                <div class="linhaSimbolos"></div>
+
+                <div class="simboloFita">
+                    <h2 class="mostrarNoMedia">Fita de conscientização</h2>
+                    <img src="images/fitaDCDestaque.png" alt="Fita de conscientização com o fundo de quebra-cabeça">
+                    <h2 class="mostrarDesktop">Fita de conscientização</h2>
+                    <p>Adotada em 1999 como final universal da consciência do autismo. O brilho da fita de quebra-cabeça demonstra a esperança de que através de uma intervenção precoce e de acesso aos tratamentos adequados, as pessoas com TEA tenham uma vida plena e que seja capaz de interagir com a sociedade em seus próprios termos. </p>
+                </div>
+            </div>
+
+            <img src="images/fitaAutismo.png" alt="" class="fitaEnfeite">
+            
+      </section>
+
+      <span class="espaco" id="saberMais"></span>
+
+        <section class="thirdBlock">
+            <div class="imagemLateral">
+                <img src="images/meninoMaosTintasFPNG.png" alt="Garoto feliz mostrando as mãos sujas de várias cores de tintas">
+            </div>
+
+            <article>
+                <div class="topSM">
+                    <div class="saberMais">
+                        <h1>Para saber mais</h1>
+                    </div>
+                    <p>Caso tenha curiosidade para saber mais sobre o assunto, acesse estes sites:</p>
+                </div>
+
+                <section class="canaisLinha1">
+                    <a href="https://www.autismspeaks.org/" target="_blank">
+                        <div class="circle">
+                            <img src="images/autismspeaks.png" alt="Logo do site Autism Speaks">
+                            <p>Autism Speaks</p>
+                            <p class="sublinha">“en-US”</p>
+                        </div>
+                    </a>
+
+                    <a href="https://institutoneurosaber.com.br/quais-os-simbolos-que-representam-o-autismo/#:~:text=O%20quebra%20cabe%C3%A7a%20%C3%A9%20um,enfrentadas%20pelas%20pessoas%20com%20autismo." target="_blank">
+                        <div class="circle">
+                            <img src="images/instituto.png" alt="Logo do site Instituto NeuroSaber">
+                            <p class="sublinha" >Instituto NeuroSaber</p>
+                        </div>
+                    </a>
+
+                    <a href="https://blog.medicalway.com.br/fevereiro-abril-azul-saiba-mais-sobre-o-mes-da-conscientizacao-do-autismo/" target="_blank">
+                        <div class="circle">
+                            <img src="images/medicalway.png" alt="Logo do blog MedicalWay">
+                            <p>MedicalWay</p>
+                        </div>
+                    </a>
+
+                    <a href="https://faceres.com.br/autismo-e-tema-de-campanha-de-sensibilizacao-desenvolvida-em-projeto-de-extensao-da-faceres" target="_blank">
+                        <div class="circle primeiro">
+                            <img src="images/faceres.png" alt="Logo do site Faceres">
+                            <p>FACERES</p>
+                        </div>
+                    </a>
+                </section>
+            </article>
+
+            <aside>
+                <div class="container">
+                    <p>Autismo: causas, sintomas, diagnótisco e tratamento</p>
+                </div>
+
+                <section class="video">
+                    <iframe width="420" height="240" src="https://www.youtube.com/embed/3ZzSFd6Eer8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section> 
+
+                <div class="container">
+                    <p>Reprodução: Instituto de Ciências Biomédicas - USP</p>
+                </div>
+            </aside>
+        </section>
+
+        <span class="espaco" id="fotos"></span>
+        
+        <section class="fourthBlock">
+            <div class="headFotos">
+                <h1>Fotos</h1>
+                <i class="fa-brands fa-slideshare fa-2x"></i>
+            </div>
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+
+                    <div class="slide s1">
+                        <img src="images/slide/1.png" alt=" Foto de Marcos Mion e seu filho Romeu Mion - Seu nome batizou a “Lei Romeo Mion”">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide/2.png" alt="Imagem da Careira de Identificação do Autista (CIA)">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide/3.png" alt="Foto do casal do Introvertendo - Um podcast sobre autismo onde autistas conversam">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide/4.png" alt="Foto de uma moça e um garoto autista. Eles representam a notícia que saiu em 2019, referindo que as carteiras de identidade no Ceará já poderiam incluir o símbolo que representa o Transtorno do Espectro Autista (TEA)">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide/5.png" alt="Foto com 4 pessoas, 2 mulheres e dois homens. Todos são autistas e no link do site do G1 relatam a dificuldade e importância do diagnótisco na vida adulta">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
+                    <label class="bar" for="slide5"></label>
+                </div>
+            </div>
+
+            <div class="legendaDasFotos">
+                <div id="text1" class="t1">
+                    <p>Romeu Mion - Filho do apresentador de televisão Marcos Mion. Seu nome batizou a “Lei Romeo Mion”. De acordo com a nova lei, a Carteira de Identificação da Pessoa com Transtorno do Espectro Autista (Ciptea) deve assegurar aos portadores atenção integral, pronto atendimento e prioridade no atendimento e no acesso aos serviços públicos e privados, em especial nas áreas de saúde, educação e assistência social.</p>
+                    <cite>Fonte: Agência Senado</cite>
+                </div>
+                <div id="text2">
+                    <p>Introvertendo – Um podcast onde autistas conversam: Um podcast sobre autismo onde autistas conversam. Discussões sobre autismo, saúde mental, cidadania, cultura e inclusão com a participação plena de autistas.</p>
+                    <cite>Fonte: Spotify</cite>
+                </div>
+                <div id="text3">
+                    <p>Conhecida como “Lei Romeo Mion”, a Ciptea foi instituída pela Lei nº 13.977, de 8/1/2020, no âmbito da Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista.</p>
+                </div>
+                <div id="text4">
+                    <p>Em 2019 saiu a notícia que as carteiras de identidade emitidas pela Perícia Forense do Estado do Ceará (Pefoce) já podem incluir o símbolo que representa o Transtorno do Espectro Autista (TEA).</p>
+                    <cite>Fonte: Ceara.gov</cite>
+                </div>
+                <div id="text5">
+                    <p>Autistas relatam dificuldade e importância do diagnóstico na vida adulta: 'A gente começa a se cobrar menos'.</p>
+                    <cite>Veja mais no <a href="https://g1.globo.com/sp/mogi-das-cruzes-suzano/noticia/2021/04/10/autistas-relatam-dificuldade-e-importancia-do-diagnostico-na-vida-adulta-a-gente-comeca-a-se-cobrar-menos.ghtml" target="black">Portal G1</a></cite>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <span id="footer"></span>
+
+    <footer class="footer">
+        <section class="footerTop">
+            <figure>
+                <a href="#"><img class="logo" src="images/logo.png" alt="Logo criado para o site. Nele contém uma fita no de conscientização com fundo de quebra-cabeça, representando o apoio às pessoas com autismo"></a>
+            </figure>
+            <section class="footerContatos">
+                <a href="mailto:ivambergisilva@gmail.com" target="_blank">
+                    <div class="gmail"><img src="images/iconGmail.svg" alt="Logo do gmail, usado para o usuário entrar em contato com o criador do site"></div>
+                </a>
+                
+                <a href="https://github.com/IvambergSilva" target="_blank">
+                    <div class="github"><img src="images/iconGitHub.svg" alt="Logo do github, usado para o usuário entrar em contato com o criador do site"></div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ivamberg-silva/" target="_blank">
+                    <div class="linkedin"><img src="images/iconLinkedin.svg" alt="Logo do linkedin, usado para o usuário entrar em contato com o criador do site"></div>
+                </a>
+
+                <a href="https://www.instagram.com/ivamberg_/" target="_blank">
+                    <div class="instagram">/div> <img src="images/iconInstagram.svg" alt="Logo do instagram, usado para o usuário entrar em contato com o criador do site"></div>
+                </a>
+            </section>
+        </section>
+
+        <div class="linha"></div>
+
+        <div class="copyright">
+            <img src="images/copyrightCor1.svg" alt="" class="seloCS">
+            <img src="images/copyrightCor2.svg" alt="" class="seloBR">
+            <p>Ivamberg Silva</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <script src="script/scriptSlide.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+:root {
+    --corPrincipal: #41B9FF;
+    --corSecundaria: #25476A;
+    --corPrinBranda: #41B9FF80;
+    --cor4: #F55754;
+
+    --fontSora: 'Sora', sans-serif;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+header label {
+    background-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0px 5px;
+    height: 26px;
+    width: 40px;
+
+    transform: scale(1.2);
+}
+
+header label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.3s;
+}
+
+.checkbox:checked + label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #E2F109;
+}
+
+.fa-sun {
+    color: #F39C12;
+}
+
+/* ELEMENTOS PARA MODO DARK */
+
+header.dark, footer.dark {
+    background-color: #555;
+    transition: all 0.5s;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: -4px;
+}
+
+body.dark {
+    background-color: #111;
+}
+
+.header, .firstBlock, .secondBlock, .thirdBlock, .fourthBlock, footer{
+    transition: all 0.5s;
+} 
+
+.firstBlock.dark, .thirdBlock.dark {
+    background-color: #111;
+}
+
+.secondBlock.dark, .fourthBlock.dark {
+    background-color: #555;
+}
+
+.firstBlock.dark h1, .firstBlock.dark h2, .secondBlock.dark h1, .secondBlock.dark h2, .secondBlock.dark p, .thirdBlock.dark p, .headFotos.dark h1, .headFotos.dark i, .legendaDasFotos.dark p, .legendaDasFotos.dark cite, footer.dark p {
+    color: #FAFAFA;
+}
+
+.imagemLateral.dark {
+    background-color: #555;
+}
+
+.frase.dark {
+    background: linear-gradient(270deg, var(--corPrincipal) 0%, rgba(253, 187, 89, 0) 95.83%, rgba(65, 185, 255, 0) 100%);
+}
+footer.dark .gmail,
+footer.dark .github,
+footer.dark .linkedin,
+footer.dark .instagram {
+    background-color: var(--corPrincipal);
+}

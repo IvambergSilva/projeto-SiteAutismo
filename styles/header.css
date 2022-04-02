@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root {
+    --corPrincipal: #41B9FF;
+    --corSecundaria: #25476A;
+    --corPrinBranda: #41B9FF80;
+    --cor3: #FDBB59;
+    --cor4: #F55754;
+
+    --fontSora: 'Sora', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #FFF;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 8;
+    border-bottom: 1px solid #000;
+    margin-bottom: -1px;
+}
+
+header figure img {
+    width: 75px;
+    height: 75px;
+    margin-left: 8vw;
+}
+
+.menuLista {
+    margin-right: 8vw;
+}
+
+.menuLista a {
+    background-color: var(--corSecundaria);
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: var(--fontSora);
+    margin-right: 20px;
+}
+
+.menuLista a:last-child {
+    background-color: var(--corPrincipal);
+    margin-right: 0px;
+}
+
+.menuLista a:hover {
+    background-color: var(--cor4);
+    color: #000;
+    transition: all 0.5s;
+}
+
+.menuLista a:last-child:hover {
+    background-color: var(--cor3);
+}
+
+.btnOpen,.btnClose {
+    display: none;
+}
+
+.espaco {
+    padding-top: 95px;
+    color: var(--corPrincipal);
+    margin: 95px;
+    font-size: 0px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 850px) {
+    .menuLista {
+        margin-right: 3vw;
+    }   
+    .menuLista a {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+        
+    .btnOpen, .btnClose {
+        width: 40px;
+        height: 42px;
+        border: 0;
+        border-radius: 4px;
+        background: var(--corSecundaria);
+        cursor: pointer;
+        margin-right: 10vw;
+    }
+
+    .btnOpen {
+        display: block;
+    }
+
+    .btnOpen i, .btnClose i {
+        color: #FFF;
+    }
+
+    .fadeAnimation {
+        animation: fadeAnimation 0.4s;
+    }
+
+    @keyframes fadeAnimation {
+        50% {
+            transform: scale(1.1);
+            opacity: 0.5;
+            transition: all .2s;
+        }
+        100% {
+            scale: 1;
+            opacity: 1;
+            transition: all .2s;
+        }
+    }
+
+    /* MENU */
+
+    .menu {
+        width: 0%;
+        background-color: var(--corSecundaria);
+        z-index: 9;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        overflow-x: hidden;
+        transition: all 0.5s;
+        border-bottom-left-radius: 20px;
+    }
+    .menu {
+        height: fit-content;
+    }
+
+    .menuLista {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 20px;
+        text-decoration: none;
+        color: #FFF;
+        display: block;
+        font: 22px var(--fontSora);
+        cursor: pointer;
+        margin-right: 0;
+    }
+
+    .menuLista a:last-child {
+        background-color: var(--corPrinBranda);
+        margin-right: 0px;
+    }
+
+    .menu a:hover, .menu a:focus {
+        color: var(--corSecundaria);
+        transition: 0.2s;
+    }
+}
